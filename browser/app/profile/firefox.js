@@ -68,8 +68,8 @@ pref("extensions.geckoProfiler.acceptedExtensionIds", "geckoprofiler@mozilla.com
 pref("extensions.webextensions.remote", true);
 
 // Require signed add-ons by default
-pref("extensions.langpacks.signatures.required", true);
-pref("xpinstall.signatures.required", true);
+pref("extensions.langpacks.signatures.required", false);
+pref("xpinstall.signatures.required", false);
 
 // Enable data collection permissions.
 pref("extensions.dataCollectionPermissions.enabled", true);
@@ -354,7 +354,7 @@ pref("browser.chrome.site_icons", true);
 pref("browser.warnOnQuit", true);
 
 // Whether to warn when quitting when using the shortcut key.
-#if defined(XP_WIN)
+#if defined(XP_WIN) || defined(XP_MACOSX)
   pref("browser.warnOnQuitShortcut", false);
 #else
   pref("browser.warnOnQuitShortcut", true);
@@ -926,7 +926,7 @@ pref("browser.tabs.insertAfterCurrent", false);
 // tabbar.
 pref("browser.tabs.insertAfterCurrentExceptPinned", false);
 pref("browser.tabs.warnOnClose", false);
-pref("browser.tabs.warnOnCloseOtherTabs", true);
+pref("browser.tabs.warnOnCloseOtherTabs", false);
 pref("browser.tabs.warnOnOpen", true);
 pref("browser.tabs.maxOpenBeforeWarn", 15);
 pref("browser.tabs.loadDivertedInBackground", false);
@@ -1738,10 +1738,10 @@ pref("browser.partnerlink.campaign.topsites", "amzn_2020_a1");
 // Activates preloading of the new tab url.
 pref("browser.newtab.preload", true);
 
-// Do not enable the preonboarding experience on Linux
-#ifdef XP_LINUX
-  pref("browser.preonboarding.enabled", false);
-#endif
+// // Do not enable the preonboarding experience on Linux & legacy macOS (Momiji purpose)
+// #ifdef XP_LINUX
+pref("browser.preonboarding.enabled", false);
+// #endif
 
 // Show "Download Firefox for mobile" QR code modal on newtab
 pref("browser.newtabpage.activity-stream.mobileDownloadModal.enabled", false);

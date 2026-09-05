@@ -600,7 +600,6 @@ class LinuxArtifactJob(ArtifactJob):
         "{product}/dependentlibs.list",
         "{product}/{product}",
         "{product}/{product}-bin",
-        "{product}/pingsender",
         "{product}/plugin-container",
         "{product}/updater",
         "{product}/glxtest",

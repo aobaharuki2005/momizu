@@ -40,7 +40,6 @@
 #endif
 @APPNAME@/Contents/Frameworks
 @APPNAME@/Contents/PkgInfo
-@RESPATH@/Assets.car
 @RESPATH@/firefox.icns
 @RESPATH@/document.icns
 @RESPATH@/@LPROJ_ROOT@.lproj/*
@@ -407,10 +406,6 @@ bin/libfreebl_64int_3.so
 #ifdef MOZ_CRASHREPORTER
 @BINPATH@/crashhelper@BIN_SUFFIX@
 #endif
-
-; [ Ping Sender ]
-;
-; @BINPATH@/pingsender@BIN_SUFFIX@
 
 ; [ Native Messaging Host Proxy ]
 ;

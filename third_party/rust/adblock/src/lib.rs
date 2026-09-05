@@ -14,6 +14,7 @@
 //! - High performance!
 //!
 //! Check the [`Engine`] documentation to get started with adblocking.
+#![feature(unsigned_is_multiple_of)]
 
 // Own modules, currently everything is exposed, will need to limit
 pub mod blocker;
