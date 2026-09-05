@@ -2,4 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-MOZ_APP_DISPLAYNAME=Nightly
+MOZ_APP_DISPLAYNAME=Momizu-Preview
+MOZ_APP_NAME=momizu
+MOZ_DISTRIBUTION_ID=net.momizu
+MOZ_APP_UA_NAME=Firefox
