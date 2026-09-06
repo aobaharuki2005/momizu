@@ -1399,7 +1399,7 @@ var gPrivacyPane = {
     /* init HTTPS-Only mode */
     this.initHttpsOnly();
 
-    this.initDoH();
+    // this.initDoH();  // Disable modification of default DoH Settings (disabled)
 
     this.initWebAuthn();
 
